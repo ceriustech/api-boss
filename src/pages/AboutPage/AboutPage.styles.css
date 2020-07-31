@@ -1,0 +1,5 @@
+.main-content_wrapper {
+  background-color: var(--bg-primary);
+  margin-left: 200px;
+  padding: 15px;
+}

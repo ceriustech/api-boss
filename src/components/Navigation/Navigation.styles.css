@@ -1,8 +1,24 @@
+.Navigation {
+  background-color: #fff;
+  width: 200px;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+}
+
+.app-title h1 {
+  font-size: 1.5em;
+  margin-left: 5px;
+  padding-left: 25px;
+}
+
 .sidebar {
+  background-color: #fff;
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -10,8 +26,16 @@
 
 .nav-item,
 .link-item {
-  display: block;
+  display: flex;
+  align-items: center;
   color: black;
-  padding: 16px;
+  padding: 16px 35px;
+  position: relative;
+  top: 35px;
   text-decoration: none;
+}
+
+.nav-item p,
+.link-item p {
+  margin: 7px 0 0 5px;
 }

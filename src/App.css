@@ -3,21 +3,17 @@
   font-family: "Open Sans";
   --text-primary: #a5a5a5;
   --text-secondary: #2d2b5e;
-  --bg-primary: #ededf2;
+  --bg-primary: #f6f4fc;
   --bg-secondary: #2d2b5e;
   --transition-speed: 600ms;
 }
 
-:root {
-  font-size: 16px;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --transition-speed: 600ms;
+* {
+  box-sizing: border-box;
 }
 
 body {
+  background-color: var(--bg-primary);
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
