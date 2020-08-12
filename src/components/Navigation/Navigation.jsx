@@ -17,10 +17,10 @@ const Navigation = () => {
       <div className="app-title">
         <h1>API BOSS</h1>
         <DoubleArrowIcon
-          style={{ width: "50px", height: "50px", transform: "rotate(180deg)" }}
+          style={{ width: "35px", height: "35px", transform: "rotate(180deg)" }}
         />
       </div>
-      <nav class="sidebar">
+      <nav className="sidebar">
         <Link className="home nav-item" to="/">
           <HomeOutlinedIcon />
           <p>Home</p>
