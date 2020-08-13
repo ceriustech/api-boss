@@ -21,7 +21,7 @@ const App = () => {
     axios
       .get(`https://api.publicapis.org/categories`)
       .then((response) => response.data)
-      .then((categories) => setApiCategories(categories));
+      .then((categories) => setApiCategories(categories.categories));
   }, []);
 
   const filteredApiCategories = useMemo(() => {
@@ -39,7 +39,11 @@ const App = () => {
       <Navigation />
       <CardList apiCategories={filteredApiCategories} />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route
+          exact
+          path="/"
+          component={() => <HomePage onChange={onChange} />}
+        />
         <Route path="/about" component={AboutPage} />
         <Route path="/faq" component={FAQPage} />
       </Switch>
